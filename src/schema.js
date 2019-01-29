@@ -145,7 +145,7 @@ function getValidated(opts, schemaName) {
 
 	if (validation.error) {
 		debug(`Validation failed in getValidated due to error: ${validation.error.message}`);
-		return {};
+		return null;
 	}
 
 	return validation.value;
